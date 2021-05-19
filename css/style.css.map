@@ -1,8 +1,12 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AIAA,AAAA,KAAK,CAAC;EACF,MAAM,EAAE,cAAc;EACtB,aAAa,EAAE,IAAI;CACtB",
     "sources": [
-        "../assets/scss/style.scss"
+        "../scss/style.scss",
+        "../scss/helper/_variables.scss",
+        "../scss/base/_reset.scss",
+        "../scss/helper/_mixin.scss",
+        "../scss/components/_video.scss"
     ],
     "names": [],
     "file": "style.css"
