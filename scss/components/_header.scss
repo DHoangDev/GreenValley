@@ -1,0 +1,110 @@
+header {
+    .navbar {
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+        .navbar-brand {
+            font-size: 30px;
+            a {
+                position: relative;
+                &:hover {
+                    text-decoration: none;
+                }
+                &::after {
+                    position: absolute;
+                    content: '\f06c';
+                    font-family: 'Font Awesome\ 5 Free';
+                    font-weight: 700;
+                    padding: 0 5px;
+                    top: -2px;
+                    right: -42px;
+                    color: $logo-color;
+                }
+                div {
+                    font-family: 'Pacifico', cursive;
+                    font-weight: 700;
+                    color: $white-color;
+                }
+                span:nth-child(2) {
+                    font-family: 'Zilla Slab', serif;
+                    font-weight: 700;
+                    font-size: 12px;
+                    letter-spacing: 6px;
+                    color: $white-color;
+                    display: block;
+                }
+            }
+        }
+        .navbar-toggler {
+            i {
+                color: $black-color;
+                font-size: 30px;
+            }
+        }
+        .navbar-collapse {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            .navbar-nav {
+                li {
+                    a {
+                        color: $white-color !important;
+                        transition: all .2s ease;
+                        &.active {
+                            color: $logo-color !important;
+                            font-weight: 500;
+                        }
+                        &:hover {
+                            color: $logo-color !important;
+                        }
+                    }
+                }
+            }
+        }
+        form {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            a {
+                color: $white-color !important;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 992px) {
+    header {
+        .navbar {
+            .navbar-toggler {
+                i {
+                    color: $white-color;
+                }
+            }
+            .navbar-collapse {
+                position: absolute;
+                top: 105px;
+                left: 0;
+                width: 100%;
+                padding: 1rem;
+                background: #ffffffe0;
+                .navbar-nav {
+                    li {
+                        a {
+                            color: $black-color !important;
+                            &.active {
+                                color: $green-color !important;
+                            }
+                            &:hover {
+                                color: $green-color !important;
+                            }
+                        }
+                    }
+                }
+                form {
+                    a {
+                        color: $black-color !important;
+                    }
+                }
+            }
+        }
+    }
+}

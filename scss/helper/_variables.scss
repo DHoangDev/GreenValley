@@ -1,0 +1,17 @@
+$white-color: white;
+$logo-color: #24ec4d;
+$black-color: black;
+$green-color: #006536;
+
+@keyframes zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+}
+
+.green {
+    color: $logo-color;
+}

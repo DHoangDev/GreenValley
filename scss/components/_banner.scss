@@ -1,0 +1,56 @@
+#banner {
+    position: relative;
+    overflow: hidden;
+    height: 800px;
+    background: $black-color;
+    .header-banner {
+        position: absolute;
+        opacity: .5;
+        width: 100%;
+        @include setBg_img();
+        animation: zoom infinite 25s 0s;
+    }
+    .img-banner {
+        background-image: url('../assets/images/bannel-1.jpg');
+    }
+    .header-content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        color: white;
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3.5rem;
+            font-weight: 600;
+        }
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            letter-spacing: 2px;
+        }
+        video {
+            border: 3px solid $green-color;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0 $black-color;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #banner {
+        height: 750px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    #banner {
+        height: 650px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .text-md-start {
+        text-align: start !important;
+    }
+}

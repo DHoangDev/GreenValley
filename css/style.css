@@ -1,5 +1,205 @@
-video {
-  border: 4px solid #888;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Zilla+Slab:wght@300;400;500;600;700&display=swap");
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+.green {
+  color: #24ec4d;
+}
+
+header .navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+header .navbar .navbar-brand {
+  font-size: 30px;
+}
+
+header .navbar .navbar-brand a {
+  position: relative;
+}
+
+header .navbar .navbar-brand a:hover {
+  text-decoration: none;
+}
+
+header .navbar .navbar-brand a::after {
+  position: absolute;
+  content: '\f06c';
+  font-family: 'Font Awesome\ 5 Free';
+  font-weight: 700;
+  padding: 0 5px;
+  top: -2px;
+  right: -42px;
+  color: #24ec4d;
+}
+
+header .navbar .navbar-brand a div {
+  font-family: 'Pacifico', cursive;
+  font-weight: 700;
+  color: white;
+}
+
+header .navbar .navbar-brand a span:nth-child(2) {
+  font-family: 'Zilla Slab', serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 6px;
+  color: white;
+  display: block;
+}
+
+header .navbar .navbar-toggler i {
+  color: black;
+  font-size: 30px;
+}
+
+header .navbar .navbar-collapse {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+header .navbar .navbar-collapse .navbar-nav li a {
+  color: white !important;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+header .navbar .navbar-collapse .navbar-nav li a.active {
+  color: #24ec4d !important;
+  font-weight: 500;
+}
+
+header .navbar .navbar-collapse .navbar-nav li a:hover {
+  color: #24ec4d !important;
+}
+
+header .navbar form {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+header .navbar form a {
+  color: white !important;
+}
+
+@media only screen and (max-width: 992px) {
+  header .navbar .navbar-toggler i {
+    color: white;
+  }
+  header .navbar .navbar-collapse {
+    position: absolute;
+    top: 105px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: #ffffffe0;
+  }
+  header .navbar .navbar-collapse .navbar-nav li a {
+    color: black !important;
+  }
+  header .navbar .navbar-collapse .navbar-nav li a.active {
+    color: #006536 !important;
+  }
+  header .navbar .navbar-collapse .navbar-nav li a:hover {
+    color: #006536 !important;
+  }
+  header .navbar .navbar-collapse form a {
+    color: black !important;
+  }
+}
+
+#banner {
+  position: relative;
+  overflow: hidden;
+  height: 800px;
+  background: black;
+}
+
+#banner .header-banner {
+  position: absolute;
+  opacity: .5;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  -webkit-animation: zoom infinite 25s 0s;
+          animation: zoom infinite 25s 0s;
+}
+
+#banner .img-banner {
+  background-image: url("../assets/images/bannel-1.jpg");
+}
+
+#banner .header-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+#banner .header-content h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+#banner .header-content p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+#banner .header-content video {
+  border: 3px solid #006536;
   border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px 0 black;
+          box-shadow: 0 0 10px 0 black;
+}
+
+#banner .header-content video:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  #banner {
+    height: 750px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #banner {
+    height: 650px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .text-md-start {
+    text-align: start !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
