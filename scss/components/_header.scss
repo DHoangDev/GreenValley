@@ -62,15 +62,16 @@ header {
             }
         }
         form {
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400;
-            font-size: 14px;
+            font-family: 'Zilla Slab', serif;
+            font-weight: 600;
+            font-size: 16px;
             a {
                 color: $white-color !important;
             }
         }
     }
 }
+
 @media only screen and (max-width: 992px) {
     header {
         .navbar {

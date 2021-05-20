@@ -8,7 +8,7 @@
         opacity: .5;
         width: 100%;
         @include setBg_img();
-        animation: zoom infinite 25s 0s;
+        animation: zoom infinite 30s 0s;
     }
     .img-banner {
         background-image: url('../assets/images/bannel-1.jpg');

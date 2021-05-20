@@ -1,0 +1,137 @@
+#story {
+    .story-title {
+        h3 {
+            position: relative;
+            font-family: 'Pacifico', cursive;
+            font-weight: 600;
+            font-size: 2rem;
+            &::after {
+                position: absolute;
+                content: '';
+                width: 10%;
+                height: 3px;
+                background: $logo-color;
+                bottom: -15px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    .story-content {
+        .timeline-section {
+            min-height: 70vh;
+            .timeline-items {
+                position: relative;
+                &::before {
+                    content: '';
+	                position: absolute;
+	                width: 2px;
+	                height: 100%;
+	                background-color: #2f363e;
+	                left: calc(50% - 1px);
+                }
+                .timeline-item {
+                    position: relative;
+                    margin-bottom: 10px;
+                    width: 100%;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    &:nth-child(odd) {
+                        padding-right: calc(50% + 20px);
+                        text-align: right;
+                    }
+                    &:nth-child(even) {
+                        padding-left: calc(50% + 20px);
+                    }
+                    .timeline-dot {
+                        height: 16px;
+                        width: 16px;
+                        background-color: $white-color;
+                        position: absolute;
+                        left: calc(50% - 8px);
+                        top:10px;
+                        border: 6px solid $logo-color;
+                        border-radius: 50%;
+                        transition: all .3s ease;
+                    }
+                    .timeline-date {
+                        font-family: 'Zilla Slab', serif;
+                        font-weight: 500;
+                        font-size: 16px;
+                        padding: .4rem .6rem;
+                        letter-spacing: 1px;
+                        color: $black-color;
+                    }
+                    .timeline-content {
+                        border-color: $green-color;
+                        transition: all .3s ease;
+                        .img {
+                            @include setBg_img();
+                            .overlay {
+                                background-color: #1e1e1e61;
+                                font-family: 'Roboto', sans-serif;;
+                                font-weight: 400;
+                                padding: 1rem;
+                                h3 {
+                                    font-size: 20px;
+                                    color: $white-color;
+                                    margin:0 0 10px;
+                                    text-transform: capitalize;
+                                    font-weight: 500;
+                                }
+                                p {
+                                    font-size: 15px;
+                                    letter-spacing: .5px;
+                                    color: $white-color;
+                                }
+                            }
+                        }
+                        .img-1 {
+                            background-image: url('../assets/images/time-line-1.jpg');
+                        }
+                        .img-2 {
+                            background-image: url('../assets/images/time-line-2.jpg');
+                        }
+                        .img-3 {
+                            background-image: url('../assets/images/time-line-3.jpg');
+                        }
+                        .img-4 {
+                            background-image: url('../assets/images/time-line-4.jpg');
+                        }
+                        &:hover {
+                            cursor: pointer;
+                            box-shadow: 0 0 8px 0 $green-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #story {
+        .story-content {
+            .timeline-section {
+                .timeline-items {
+                    &::before {
+                        left: 7px;
+                    }
+                    .timeline-item {
+                        &:nth-child(odd) {
+                            padding-right: 0;
+                            text-align: left;
+                        }
+                        &:nth-child(odd), &:nth-child(even) {
+                            padding-left: 37px;
+                        }
+                        .timeline-dot {
+                            left:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
