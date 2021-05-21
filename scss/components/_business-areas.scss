@@ -4,9 +4,6 @@
         .business-areas-title {
             h3 {
                 color: white;
-                &::after {
-                    background: $logo-color !important;
-                }
             }
             @include title();
         }
