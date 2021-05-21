@@ -1,0 +1,5 @@
+#map {
+    .contact-title {
+        @include title();
+    }
+}
