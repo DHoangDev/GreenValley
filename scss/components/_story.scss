@@ -1,4 +1,6 @@
 #story {
+    position: relative;
+    overflow: hidden;
     .story-title {
         @include title();
     }

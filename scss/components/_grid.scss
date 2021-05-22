@@ -1,0 +1,192 @@
+.grid {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(12, auto);
+}
+
+@media only screen and (min-width: 992px) {
+    .grid {
+        grid-template-rows: repeat(4, 175px);
+    }
+    .grid-col-xl-1 {
+        grid-column: 1 / span 5;
+        grid-row: span 2;
+    }
+    .grid-col-xl-2 {
+        grid-column: 6 / span 3;
+        grid-row: span 1;
+    }
+    .grid-col-xl-3 {
+        grid-column: 6 / span 3;
+        grid-row: span 1;
+    }
+    .grid-col-xl-4 {
+        grid-column: 9 / span 4;
+        grid-row: span 2;
+    }
+    .grid-col-xl-5 {
+        grid-column: 1 / span 3;
+        grid-row: span 2;
+    }
+    .grid-col-xl-6 {
+        grid-column: 4 / span 4;
+        grid-row: span 1;
+    }
+    .grid-col-xl-7 {
+        grid-column: 4 / span 4;
+        grid-row: span 1;
+    }
+    .grid-col-xl-8 {
+        grid-column: 8 / span 5;
+        grid-row: span 2;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .grid {
+        grid-template-rows: repeat(4, 165px);
+    }
+    .grid-col-lg-1 {
+        grid-column: 1 / span 4;
+        grid-row: span 2;
+    }
+    .grid-col-lg-2 {
+        grid-column: 5 / span 4;
+        grid-row: span 1;
+    }
+    .grid-col-lg-3 {
+        grid-column: 5 / span 4;
+        grid-row: span 1;
+    }
+    .grid-col-lg-4 {
+        grid-column: 9 / span 4;
+        grid-row: span 2;
+    }
+    .grid-col-lg-5 {
+        grid-column: 1 / span 4;
+        grid-row: span 2;
+    }
+    .grid-col-lg-6 {
+        grid-column: 5 / span 4;
+        grid-row: span 1;
+    }
+    .grid-col-lg-7 {
+        grid-column: 5 / span 4;
+        grid-row: span 1;
+    }
+    .grid-col-lg-8 {
+        grid-column: 9 / span 4;
+        grid-row: span 2;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .grid {
+        grid-template-rows: repeat(6, 155px);
+    }
+    .grid-col-md-1 {
+        grid-column: 1 / span 6;
+        grid-row: span 2;
+    }
+    .grid-col-md-2 {
+        grid-column: 7 / span 6;
+        grid-row: span 1;
+    }
+    .grid-col-md-3 {
+        grid-column: 7 / span 6;
+        grid-row: span 1;
+    }
+    .grid-col-md-4 {
+        grid-column: 1 / span 6;
+        grid-row: span 1;
+    }
+    .grid-col-md-5 {
+        grid-column: 1 / span 6;
+        grid-row: span 1;
+    }
+    .grid-col-md-6 {
+        grid-column: 7 / span 6;
+        grid-row: span 2;
+    }
+    .grid-col-md-7 {
+        grid-column: 1 / span 6;
+        grid-row: span 2;
+    }
+    .grid-col-md-8 {
+        grid-column: 7 / span 6;
+        grid-row: span 2;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .grid {
+        grid-template-rows: repeat(4, 145px);
+    }
+    .grid-col-sm-1 {
+        grid-column: 1 / span 6;
+        grid-row: span 1;
+    }
+    .grid-col-sm-2 {
+        grid-column: 7 / span 6;
+        grid-row: span 1;
+    }
+    .grid-col-sm-3 {
+        grid-column: 1 / span 6;
+        grid-row: span 1;
+    }
+    .grid-col-sm-4 {
+        grid-column: 7 / span 6;
+        grid-row: span 1;
+    }
+    .grid-col-sm-5 {
+        grid-column: 1 / span 6;
+        grid-row: span 1;
+    }
+    .grid-col-sm-6 {
+        grid-column: 7 / span 6;
+        grid-row: span 1;
+    }
+    .grid-col-sm-7 {
+        grid-column: 1 / span 6;
+        grid-row: span 1;
+    }
+    .grid-col-sm-8 {
+        grid-column: 7 / span 6;
+        grid-row: span 1;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .grid {
+        grid-template-rows: repeat(8, 145px);
+    }
+    .grid-col-sm-1 {
+        grid-column: 1 / span 12;
+        grid-row: span 1;
+    }
+    .grid-col-sm-2 {
+        grid-column: 1 / span 12;
+        grid-row: span 1;
+    }
+    .grid-col-sm-3 {
+        grid-column: 1 / span 12;
+        grid-row: span 1;
+    }
+    .grid-col-sm-4 {
+        grid-column: 1 / span 12;
+        grid-row: span 1;
+    }
+    .grid-col-sm-5 {
+        grid-column: 1 / span 12;
+        grid-row: span 1;
+    }
+    .grid-col-sm-6 {
+        grid-column: 1 / span 12;
+        grid-row: span 1;
+    }
+    .grid-col-sm-7 {
+        grid-column: 1 / span 12;
+        grid-row: span 1;
+    }
+    .grid-col-sm-8 {
+        grid-column: 1 / span 12;
+        grid-row: span 1;
+    }
+}

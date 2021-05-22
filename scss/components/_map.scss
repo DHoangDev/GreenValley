@@ -2,6 +2,11 @@
     .contact-title {
         @include title();
     }
+    form {
+        textarea {
+            height: 100%;
+        }
+    }
 }
 
 @media only screen and (max-width:991px) {
