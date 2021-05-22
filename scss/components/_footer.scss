@@ -1,3 +1,53 @@
 footer {
     background: $green-color;
+    h5 {
+        color: $logo-color;
+        font-family: 'Zilla Slab', serif;
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 22px;
+    }
+    .logo {
+        position: relative;
+        @include logo();
+    }
+    .week {
+        list-style: none;
+        li {
+            a {
+                display: flex;
+                justify-content: space-between;
+                color: $white-color;
+                font-size: .75rem;
+                border-bottom: 1px dotted;
+                text-decoration: none;
+            }
+        }
+    }
+    .social {
+        list-style: none;
+        display: flex;
+        li {
+            a {
+                display: block;
+                text-align: center;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                color: $white-color;
+            }
+            &:nth-child(1) > a {
+                border-radius: 50%;
+                background: #4867aa;
+            }
+            &:nth-child(2) > a {
+                border-radius: 50%;
+                background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+            }
+            &:nth-child(3) > a {
+                border-radius: 50%;
+                background: #fc001c;
+            }
+        }
+    }
 }

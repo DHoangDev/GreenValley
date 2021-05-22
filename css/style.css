@@ -191,7 +191,7 @@ header .navbar form a {
   color: white !important;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   header .navbar .navbar-toggler i {
     color: white;
   }
@@ -270,13 +270,13 @@ header .navbar form a {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1199px) {
   #banner {
     height: 750px;
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   #banner {
     height: 650px;
   }
@@ -305,6 +305,12 @@ header .navbar form a {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 767px) {
+  #story .story-title h3 {
+    font-size: 1.65rem;
+  }
 }
 
 #story .story-content .timeline-section {
@@ -464,6 +470,12 @@ header .navbar form a {
           transform: translateX(-50%);
 }
 
+@media only screen and (max-width: 767px) {
+  #business-areas .overlay .business-areas-title h3 {
+    font-size: 1.65rem;
+  }
+}
+
 #business-areas .overlay .business-areas-content .card {
   overflow: hidden;
   border-radius: 8px;
@@ -591,7 +603,114 @@ header .navbar form a {
           transform: translateX(-50%);
 }
 
+@media only screen and (max-width: 767px) {
+  #map .contact-title h3 {
+    font-size: 1.65rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #map form textarea {
+    height: 225px;
+  }
+}
+
 footer {
   background: #006536;
+}
+
+footer h5 {
+  color: #24ec4d;
+  font-family: 'Zilla Slab', serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 22px;
+}
+
+footer .logo {
+  position: relative;
+  font-size: 30px;
+}
+
+footer .logo a {
+  position: relative;
+}
+
+footer .logo a:hover {
+  text-decoration: none;
+}
+
+footer .logo a::after {
+  position: absolute;
+  content: '\f06c';
+  font-family: 'Font Awesome\ 5 Free';
+  font-weight: 700;
+  padding: 0 5px;
+  top: -2px;
+  right: -42px;
+  color: #24ec4d;
+}
+
+footer .logo a div {
+  font-family: 'Pacifico', cursive;
+  font-weight: 700;
+  color: white;
+}
+
+footer .logo a span:nth-child(2) {
+  font-family: 'Zilla Slab', serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 6px;
+  color: white;
+  display: block;
+}
+
+footer .week {
+  list-style: none;
+}
+
+footer .week li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  font-size: .75rem;
+  border-bottom: 1px dotted;
+  text-decoration: none;
+}
+
+footer .social {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .social li a {
+  display: block;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: white;
+}
+
+footer .social li:nth-child(1) > a {
+  border-radius: 50%;
+  background: #4867aa;
+}
+
+footer .social li:nth-child(2) > a {
+  border-radius: 50%;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+footer .social li:nth-child(3) > a {
+  border-radius: 50%;
+  background: #fc001c;
 }
 /*# sourceMappingURL=style.css.map */

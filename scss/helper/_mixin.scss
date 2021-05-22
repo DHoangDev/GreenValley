@@ -1,3 +1,36 @@
+@mixin logo {
+    font-size: 30px;
+    a {
+        position: relative;
+        &:hover {
+            text-decoration: none;
+        }
+        &::after {
+            position: absolute;
+            content: '\f06c';
+            font-family: 'Font Awesome\ 5 Free';
+            font-weight: 700;
+            padding: 0 5px;
+            top: -2px;
+            right: -42px;
+            color: $logo-color;
+        }
+        div {
+            font-family: 'Pacifico', cursive;
+            font-weight: 700;
+            color: $white-color;
+        }
+        span:nth-child(2) {
+            font-family: 'Zilla Slab', serif;
+            font-weight: 700;
+            font-size: 12px;
+            letter-spacing: 6px;
+            color: $white-color;
+            display: block;
+        }
+    }
+}
+
 @mixin setBg_img {
     background-position: center;
     background-repeat: no-repeat;
@@ -20,6 +53,11 @@
             bottom: -15px;
             left: 50%;
             transform: translateX(-50%);
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        h3 {
+            font-size: 1.65rem;
         }
     }
 }
