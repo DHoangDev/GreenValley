@@ -1,8 +1,8 @@
 $white-color: white;
-$logo-color: #24ec4d;
 $black-color: black;
+$logo-color: #24ec4d;
+$main-color: #02b751;
 $green-color: #006536;
-
 
 @keyframes show_content {
     from {
@@ -14,7 +14,6 @@ $green-color: #006536;
         opacity: 1;
     }
 }
-
 @keyframes show_video {
     from {
         transform: scale(1.06);
@@ -25,7 +24,6 @@ $green-color: #006536;
         opacity: 1;
     }
 }
-
 @keyframes zoom {
     from {
         transform: scale(1);
@@ -38,11 +36,9 @@ $green-color: #006536;
 .green {
     color: $logo-color;
 }
-
 .show_content {
     animation: show_content 2s;
 }
-
 .show_video {
     animation: show_video 2s;
 }

@@ -11,13 +11,13 @@
         animation: zoom infinite 30s 0s;
     }
     .img-banner {
-        background-image: url('../assets/images/bannel-1.jpg');
+        background-image: url('../assets/images/banner-1.jpg');
     }
     .header-content {
         position: absolute;
         width: 100%;
         height: 100%;
-        color: white;
+        color: $white-color;
         h1 {
             font-family: 'Pacifico', cursive;
             font-size: 4rem;

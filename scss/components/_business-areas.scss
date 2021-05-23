@@ -1,23 +1,23 @@
 #business-areas {
     position: relative;
     overflow: hidden;
-    background-image: url('../assets/images/bg-save.jpg');
-    @include setBg_img();
+    // background-image: url('../assets/images/bg-save.jpg');
+    // @include setBg_img();
     background-attachment: fixed;
     .overlay {
-        background-color: rgba($color: #000000, $alpha: .9);
+        background: #d9d9d9;
         .business-areas-title {
             h3 {
-                color: white;
+                color: $black-color;
             }
             @include title();
         }
         .business-areas-content {
             .card{
                 overflow: hidden;
-                border-radius: 8px;
                 height: 100%;
-                background-color: rgba($color: #000000, $alpha: .5);
+                border-radius: 5px;
+                background-color: rgba($color: #fff, $alpha: .2);
                 transition: all .3s ease;
                 transform: translateY(0px);
                 .card-content {
@@ -54,6 +54,9 @@
                     transform: translateY(-10px);
                 }
             }
+            .card-easy {
+                height: 175px;
+            }
             .img {
                 @include setBg_img();
             }
@@ -65,6 +68,28 @@
             .img-6 { background-image: url('../assets/images/business-3.jpg');}
             .img-7 { background-image: url('../assets/images/business-2.jpg');}
             .img-8 { background-image: url('../assets/images/business-1.jpg');}
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #business-areas {
+        .card-medium {
+            height: 175px !important;
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    #business-areas {
+        .card {
+            height: 175px !important;
+        }
+    }
+}
+@media only screen and (max-width: 575px) {
+    #business-areas {
+        .card {
+            height: 175px !important;
         }
     }
 }
