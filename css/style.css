@@ -77,7 +77,7 @@
 }
 
 .green {
-  color: #24ec4d;
+  color: #0bbb2e;
 }
 
 .show_content {
@@ -139,7 +139,7 @@ header .navbar .navbar-brand a::after {
   padding: 0 5px;
   top: -2px;
   right: -42px;
-  color: #24ec4d;
+  color: #0bbb2e;
 }
 
 header .navbar .navbar-brand a div {
@@ -175,12 +175,12 @@ header .navbar .navbar-collapse .navbar-nav li a {
 }
 
 header .navbar .navbar-collapse .navbar-nav li a.active {
-  color: #02b751 !important;
+  color: #0bbb2e !important;
   font-weight: 500;
 }
 
 header .navbar .navbar-collapse .navbar-nav li a:hover {
-  color: #02b751 !important;
+  color: #0bbb2e !important;
 }
 
 header .navbar form {
@@ -209,10 +209,10 @@ header .navbar form a {
     color: black !important;
   }
   header .navbar .navbar-collapse .navbar-nav li a.active {
-    color: #006536 !important;
+    color: #0bbb2e !important;
   }
   header .navbar .navbar-collapse .navbar-nav li a:hover {
-    color: #006536 !important;
+    color: #0bbb2e !important;
   }
   header .navbar .navbar-collapse form a {
     color: black !important;
@@ -222,7 +222,7 @@ header .navbar form a {
 #banner {
   position: relative;
   overflow: hidden;
-  height: 800px;
+  height: 700px;
   background: black;
 }
 
@@ -262,7 +262,7 @@ header .navbar form a {
 }
 
 #banner .header-content video {
-  border: 3px solid #006536;
+  border: 3px solid #014324;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 10px 0 black;
           box-shadow: 0 0 10px 0 black;
@@ -272,15 +272,15 @@ header .navbar form a {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 1199px) {
-  #banner {
-    height: 750px;
-  }
-}
-
 @media only screen and (max-width: 991px) {
   #banner {
     height: 650px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  #banner {
+    height: 600px;
   }
 }
 
@@ -297,7 +297,7 @@ header .navbar form a {
 
 #story .story-title h3 {
   position: relative;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 2.2rem;
 }
@@ -351,7 +351,7 @@ header .navbar form a {
   position: absolute;
   left: calc(50% - 8px);
   top: 10px;
-  border: 6px solid #02b751;
+  border: 6px solid #0bbb2e;
   border-radius: 50%;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
@@ -367,7 +367,7 @@ header .navbar form a {
 }
 
 #story .story-content .timeline-section .timeline-items .timeline-item .timeline-content {
-  border-color: #006536;
+  border-color: #014324;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -418,8 +418,8 @@ header .navbar form a {
 
 #story .story-content .timeline-section .timeline-items .timeline-item .timeline-content:hover {
   cursor: pointer;
-  -webkit-box-shadow: 0 0 8px 0 #006536;
-          box-shadow: 0 0 8px 0 #006536;
+  -webkit-box-shadow: 0 0 8px 0 #014324;
+          box-shadow: 0 0 8px 0 #014324;
 }
 
 @media only screen and (max-width: 767px) {
@@ -441,20 +441,19 @@ header .navbar form a {
 #business-areas {
   position: relative;
   overflow: hidden;
-  background-attachment: fixed;
 }
 
 #business-areas .overlay {
-  background: #d9d9d9;
+  background: #014324;
 }
 
 #business-areas .overlay .business-areas-title h3 {
-  color: black;
+  color: white;
 }
 
 #business-areas .overlay .business-areas-title h3 {
   position: relative;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 2.2rem;
 }
@@ -586,7 +585,7 @@ header .navbar form a {
 
 #map .contact-title h3 {
   position: relative;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 2.2rem;
 }
@@ -607,17 +606,8 @@ header .navbar form a {
   }
 }
 
-footer {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  background-image: url("../assets/images/footer.jpg");
-}
-
 footer .overlay {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(0, 102, 21, 0.8)), to(rgba(0, 255, 52, 0.6)));
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 102, 21, 0.8), rgba(0, 255, 52, 0.6));
+  background: #014324;
 }
 
 footer h5 {
@@ -649,7 +639,7 @@ footer .logo a::after {
   padding: 0 5px;
   top: -2px;
   right: -42px;
-  color: #24ec4d;
+  color: #0bbb2e;
 }
 
 footer .logo a div {

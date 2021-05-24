@@ -22,11 +22,11 @@ header {
                         color: $white-color !important;
                         transition: all .2s ease;
                         &.active {
-                            color: $main-color !important;
+                            color: $logo-color !important;
                             font-weight: 500;
                         }
                         &:hover {
-                            color: $main-color !important;
+                            color: $logo-color !important;
                         }
                     }
                 }
@@ -63,10 +63,10 @@ header {
                         a {
                             color: $black-color !important;
                             &.active {
-                                color: $green-color !important;
+                                color: $logo-color !important;
                             }
                             &:hover {
-                                color: $green-color !important;
+                                color: $logo-color !important;
                             }
                         }
                     }
