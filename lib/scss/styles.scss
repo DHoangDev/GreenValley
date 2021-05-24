@@ -195,7 +195,7 @@ header {
         width: 100%;
         color: white;
         padding: 3rem 0;
-        background: linear-gradient(to left, rgba(36, 236, 77, 0.8), rgba(0, 77, 30, 0.2));
+        background: linear-gradient(to left, rgba(0, 255, 52, 0.6), rgba(0, 77, 30, 0.2));
         h1 {
             font-family: 'Pacifico', cursive;
             font-size: 4rem;
@@ -230,6 +230,13 @@ header {
 @media only screen and (max-width: 991px) {
     #banner {
         height: 650px;
+    }
+}
+@media only screen and (max-width: 575px) {
+    #banner {
+        h1 {
+            font-size: 3rem !important;
+        }
     }
 }
 @media only screen and (min-width: 768px) {
